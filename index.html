@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <title>Encriptador</title>
+  </head>
+  <body>
+    <header>
+        <img class="logo" src="./assets/alura_logo.svg" alt="logo de alura"/>
+    </header>
+    <main class="container">
+      <form action="" class="container__left">
+        <textarea name="" id="" class="container__left__txt" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+        <div class="container__left__btn__down">
+          <div class="container__left__btn__down_msj">
+            <img src="./assets/alert.svg" alt="alert">
+            <span>Solo letras minúsculas y sin acentos</span>
+          </div>
+        </div>
+        <div class="container__left__btn">
+          <input type="submit" value="Encriptar" class="btn_encrypt" id="btnEncrypt">
+          <input type="submit" value="Desencriptar" class="btn_encrypt secondary" id="btnDecrypt">
+        </div>
+      </form>
+      <aside class="container__right">
+        <img src="./assets/muneco.svg" alt="muneco" class="container__right__muneco">
+        <div class="container__right__msj">
+          <h3 class="container__right__msj__title">Ningún mensaje fue encontrado</h3>
+          <p class="container__right__msj__p">Ingresa el texto que desees encriptar o desencriptar.</p>
+          <button class="btn_encrypt secondary hidden" id="btnCopy">Copiar</button>
+        </div>
+      </aside>
+    </main>
+    <footer></footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,170 @@
+:root {
+    --color-darkblue-300: #0A3871;
+    --color-lightblue-100: #F3F5FC;
+    --color-greydark-500: #343A40;
+    --color-lightblue-200: #EFF1FA;
+
+    --font--inter: "Inter", sans-serif;
+}
+
+* {
+    /* padding: 0;
+    margin: 0; */
+    box-sizing: border-box;
+    
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--color-lightblue-100);
+    font-family: var(--font--inter);
+}
+
+
+header {
+    width: 60%;
+    margin-bottom: 5rem;
+}
+
+.logo {
+    width:  120px;
+    height: 48px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.container__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 85dvh;
+}
+
+.container__left__txt {
+    width: 100%;
+    max-width: 577px;
+    border: transparent;
+    background-color: transparent;
+    height: 64dvh;
+    overflow: auto;
+    outline: none;
+    color: var(--color-darkblue-300);
+    font-family: var(--font--inter);
+    font-size: 3.2rem;
+    margin-bottom: 3rem;
+    resize: none;
+    padding: 1rem 0px 1rem 0px;
+}
+
+::placeholder {
+    color: var(--color-darkblue-300);
+}
+
+.container__left__btn {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+
+.container__left__btn__down_msj {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn_encrypt{
+    background-color: var(--color-darkblue-300);
+    font-size: 1.6rem;
+    color: var(--color-lightblue-100);
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    border: 1px solid var(--color-darkblue-300);
+    padding: 1rem 2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.secondary {
+    background: transparent;
+    color: var(--color-darkblue-300);
+}
+
+.secondary:hover {
+    background-color: #D8DFE8;
+}
+
+.hidden {
+    display: none;
+}
+
+.container__right {
+    background: white;
+    height: 85dvh;
+    max-width: 40rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10rem;
+    border-radius: 32px;
+    justify-content: center;
+}
+
+.container__right__msj {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.container__right__msj__title {
+    font-size: 2.4rem;
+    margin-top: 0px;
+}
+
+.container__right__msj__p {
+    font-size: 1.6rem;
+    overflow: auto;
+    width: 90%;
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        width: 70px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .container__left__btn {
+        justify-content: center;
+    }
+
+    .container__right {
+        height: auto;
+        max-width: 624px;
+        margin-top: 2rem;
+        min-height: 186px;
+    }
+
+    .container__right__msj__p {
+        width: 90%;
+        overflow-x: hidden;
+    }
+
+    .container__right__muneco {
+        display: none;
+    }
+}
